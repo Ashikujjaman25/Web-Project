@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(images/travel.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+}
+.navbar {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+.logo {
+  color: gold;
+  font-size: 30px;
+  font-family: Arial;
+  padding-left: 5%;
+  float: left;
+  padding-top: 10px;
+}
+.menu {
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  margin-left: 65px;
+  margin-top: 25px;
+  font-size: 25px;
+}
+ul li a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold;
+  padding: 2px 2px;
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover {
+  color: greenyellow;
+}
+.introduction {
+  width: auto;
+  margin-left: 5%;
+  margin-top: 20%;
+}
+.paragraph {
+  color: wheat;
+  margin-top: 2%;
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  width: 90%;
+}
+.two {
+  margin-top: 2%;
+  background-image: url(images/decoration/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.midone,
+.midtwo,
+.midthree {
+  margin-top: 3%;
+
+  margin-left: 20px;
+  text-align: justify;
+}
+.midone {
+  background-color: bisque;
+  padding: 2% 2%;
+  width: 400px;
+  border-radius: 7px;
+  box-shadow: 10px 10px 40px darkred;
+
+  border-image: linear-gradient(red, blue);
+  border-image-slice: 1;
+  border-left: 5px solid;
+}
+
+.midtwo {
+  background-color: lightsteelblue;
+  padding: 2% 2%;
+  width: 400px;
+  border-radius: 7px;
+  box-shadow: 10px 10px 40px aqua;
+  border-image: linear-gradient(black, red);
+  border-image-slice: 1;
+  border-left: 5px solid;
+}
+
+.midthree {
+  background-color: lightsalmon;
+  padding: 2% 2%;
+  width: 400px;
+
+  border-radius: 7px;
+  box-shadow: 10px 10px 40px darkmagenta;
+  border-image: linear-gradient(gray, darkmagenta);
+  border-image-slice: 1;
+  border-left: 5px solid;
+}
+.two-all {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
