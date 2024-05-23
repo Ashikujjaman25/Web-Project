@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <section class="booking-1">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">
+            <span
+              style="
+                color: lime;
+                font-size: 70px;
+                font-weight: 700;
+                margin-top: 0%;
+              "
+              >T</span
+            >ravel
+          </h2>
+        </div>
+        <!--Navigation bar-->
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="authority.html">Authority</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="bacground">
+      <div class="booking-from">
+        <h2>Travel Booking Form</h2>
+        <form action="ticket.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="destination">Destination:</label>
+          <input type="text" name="destination" id="destination" required />
+
+          <label for="departure-date">Departure Date:</label>
+          <input
+            type="date"
+            name="departure-date"
+            id="departure-date"
+            required
+          />
+
+          <label for="return-date">Return Date:</label>
+          <input type="date" name="return-date" id="return-date" required />
+
+          <label for="travel-mode" style="padding-bottom: 1%"
+            >Travel Mode:</label
+          >
+          <div class="travel-modes">
+            <input
+              type="checkbox"
+              id="road"
+              name="travel-mode[]"
+              value="road"
+            />
+            <label for="road">Road</label>
+
+            <input
+              type="checkbox"
+              id="rail"
+              name="travel-mode[]"
+              value="rail"
+            />
+            <label for="rail">Rail</label>
+
+            <input
+              type="checkbox"
+              id="boat"
+              name="travel-mode[]"
+              value="boat"
+            />
+            <label for="boat">Boat</label>
+
+            <input type="checkbox" id="air" name="travel-mode[]" value="air" />
+            <label for="air">Air</label>
+          </div>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
